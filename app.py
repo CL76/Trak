@@ -10,7 +10,7 @@ st.write(df['type'].value_counts())
 from sklearn.linear_model import LogisticRegression
 #>>> X, y = load_iris(return_X_y=True)
 #>>> clf = LogisticRegression(random_state=0).fit(X, y)
-v>>> clf.predict(X[:2, :])
+#v>>> clf.predict(X[:2, :])
 #array([0, 0])
 #>>> clf.predict_proba(X[:2, :])
 #array([[9.8...e-01, 1.8...e-02, 1.4...e-08],

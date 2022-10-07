@@ -1,5 +1,5 @@
 import pandas as pd
-import streamlit
+import streamlit as st
 
 
 df = pd.read_csv("data.txt",';')

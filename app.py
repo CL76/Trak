@@ -7,6 +7,8 @@ df = pd.read_csv("data.txt",';')
 st.dataframe(df)
 st.write(df['type'].value_counts())
 
+st.write(df.groupby('type').size())
+st.write(df.groupby('type').count())
 
 #>>> X, y = load_iris(return_X_y=True)
 #>>> clf = LogisticRegression(random_state=0).fit(X, y)

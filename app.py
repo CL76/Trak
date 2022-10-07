@@ -1,13 +1,13 @@
 import pandas as pd
 import streamlit as st
-
+from sklearn.linear_model import LogisticRegression
 
 df = pd.read_csv("data.txt",';')
 
 st.dataframe(df)
 st.write(df['type'].value_counts())
 
-from sklearn.linear_model import LogisticRegression
+
 #>>> X, y = load_iris(return_X_y=True)
 #>>> clf = LogisticRegression(random_state=0).fit(X, y)
 #v>>> clf.predict(X[:2, :])

@@ -16,9 +16,10 @@ X=df_st1.loc[:,['Nombre séance','dose/seance','Longueur Active La (cm)']]
 st.write(X)
 y=df_st1.loc[:,['KERMA (cgy cm²)']]
 st.write(y)
- # clf = LogisticRegression(random_state=0).fit(X, y)
 
-
+clf = LogisticRegression(random_state=0).fit(X, y)
+clf.predict(X[:2, :])
+st.write(clf.predict(X[:2, :]))
 #>>> X, y = load_iris(return_X_y=True)
 #>>> clf = LogisticRegression(random_state=0).fit(X, y)
 #v>>> clf.predict(X[:2, :])
@@ -26,5 +27,5 @@ st.write(y)
 #>>> clf.predict_proba(X[:2, :])
 #array([[9.8...e-01, 1.8...e-02, 1.4...e-08],
 #       [9.7...e-01, 2.8...e-02, ...e-08]])
-#>>> clf.score(X, y)
+#>>> clf.predict(X[:2, :])
 #0.97...

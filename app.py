@@ -14,7 +14,8 @@ df_st1 = df[df['type']=='st1']
 st.write(df_st1)
 X=df_st1.loc[:,['Nombre séance','dose/seance','Longueur Active La (cm)']]
 st.write(X)
-
+y=df_st1.loc[:,['KERMA (cgy cm²)']]
+st.write(y)
  # clf = LogisticRegression(random_state=0).fit(X, y)
 
 

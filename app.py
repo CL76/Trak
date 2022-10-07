@@ -2,6 +2,6 @@ import pandas as pd
 
 
 
-df_track = pd.read_csv("data.txt",';')
+df_trak = pd.read_csv("data.txt",';')
 
-
+st.df_trak

@@ -9,7 +9,7 @@ st.write(df['type'].value_counts())
 
 st.write(df.groupby('type').size())
 st.write(df.groupby('type').count())
-st.write(df['type']=='st1')
+st.write(df[df['type']=='st1'])
 
 #>>> X, y = load_iris(return_X_y=True)
 #>>> clf = LogisticRegression(random_state=0).fit(X, y)

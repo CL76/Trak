@@ -54,5 +54,5 @@ st.plotly_chart(fig)
 
 #V CTV HR;V CTV RI
 
-fig = px.box(df,  x='V CTV HR', y="KERMA (cgy cm²)",color='type')
+fig = px.scatter(df,  x='V CTV HR', y="KERMA (cgy cm²)",color='type')
 st.plotly_chart(fig)

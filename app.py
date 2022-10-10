@@ -9,7 +9,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-df = pd.read_csv("data.txt",';')
+#df = pd.read_csv("data.txt",';')
+df = pd.read_csv("datapoint.txt",';')
 
 st.dataframe(df)
 st.write(df['type'].value_counts())

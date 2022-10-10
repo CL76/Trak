@@ -1,6 +1,13 @@
 import pandas as pd
 import streamlit as st
-from sklearn.linear_model import LogisticRegression
+#from sklearn.linear_model import LogisticRegression
+
+import plotly.express as px
+
+import matplotlib.pyplot as plt
+#import bokeh
+import seaborn as sns
+
 
 df = pd.read_csv("data.txt",';')
 
@@ -21,4 +28,16 @@ clf = LogisticRegression(random_state=0).fit(X, y)
 predictions  = clf.predict(X[:2, :])
 st.write(predictions)
 
+st.title("Hello")
+fig = sns.countplot(x='type',data=df,palette='hls')
+st.pyplot(fig)
+#plt.show()
 
+fig = px.scatter(df_st1, x='Longueur Active La (cm)', y="KERMA (cgy cm²)")
+st.pyplot(fig)
+
+fig = px.scatter(df, x='Longueur Active La (cm)', y="KERMA (cgy cm²)",color='type')
+st.pyplot(fig)
+
+fig = px.box(df,  x='Longueur Active La (cm)', y="KERMA (cgy cm²)")
+st.pyplot(fig)

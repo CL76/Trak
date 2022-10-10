@@ -51,3 +51,8 @@ fig = px.box(df,  x='Longueur Active La (cm)', y="KERMA (cgy cm²)",color='type'
 fig.add_scatter(x=[Insertb],y=[Inserta], mode="markers", marker=dict(size=20, color="crimson"), name="a")
 
 st.plotly_chart(fig)
+
+#V CTV HR;V CTV RI
+
+fig = px.box(df,  x='V CTV HR', y="KERMA (cgy cm²)",color='type')
+st.plotly_chart(fig)

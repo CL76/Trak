@@ -32,7 +32,7 @@ st.title("Hello")
 #plt.show()
 
 fig = px.scatter(df_st1, x='Longueur Active La (cm)', y="KERMA (cgy cm²)")
-st.pyplot(fig)
+st.plotly_chart(fig)
 
 fig = px.scatter(df, x='Longueur Active La (cm)', y="KERMA (cgy cm²)",color='type')
 st.pyplot(fig)

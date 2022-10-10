@@ -34,8 +34,16 @@ st.plotly_chart(fig)
 fig = px.scatter(df, x='Longueur Active La (cm)', y="KERMA (cgy cm²)",color='type')
 st.plotly_chart(fig)
 
+fig = px.box(df,  x='Longueur Active La (cm)', y="KERMA (cgy cm²)",color='type')
+fig.add_scatter(x=[4.5],y=[3000], mode="markers", marker=dict(size=20, color="crimson"), name="a")
+
 fig = px.box(df,  x='Longueur Active La (cm)', y="KERMA (cgy cm²)",)
 st.plotly_chart(fig)
 
 fig = px.box(df,  x='Longueur Active La (cm)', y="KERMA (cgy cm²)",color='type')
+st.plotly_chart(fig)
+
+
+fig = px.box(df,  x='Longueur Active La (cm)', y="KERMA (cgy cm²)",color='type')
+fig.add_scatter(x=[4.5],y=[3000], mode="markers", marker=dict(size=20, color="crimson"), name="a")
 st.plotly_chart(fig)

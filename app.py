@@ -57,5 +57,5 @@ st.plotly_chart(fig)
 fig = px.scatter(df,  x='V CTV HR', y="V CTV RI",color='KERMA (cgy cm²)')
 st.plotly_chart(fig)
 
-fig = px.violin(df,  x='V CTV HR', y="V CTV RI",color='KERMA (cgy cm²)')
+fig = px.violin(df,  x='V CTV HR', y="KERMA (cgy cm²)",color='KERMA (cgy cm²)')
 st.plotly_chart(fig)

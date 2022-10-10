@@ -22,9 +22,9 @@ df_st1 = df[df['type']=='st1']
 
 
 
-st.title("Hello")
-fig = sns.countplot(x='type',data=df,palette='hls')
-st.pyplot(fig)
+#st.title("Hello")
+#fig = sns.countplot(x='type',data=df,palette='hls')
+#st.pyplot(fig)
 
 
 fig = px.scatter(df_st1, x='Longueur Active La (cm)', y="KERMA (cgy cm²)")

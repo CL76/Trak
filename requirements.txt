@@ -1,3 +1,6 @@
 pandas
 streamlit
 sklearn
+bokeh
+seaborn
+matplotlib

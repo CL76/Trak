@@ -24,7 +24,7 @@ df_st1 = df[df['type']=='st1']
 
 st.title("Hello")
 fig = sns.countplot(x='type',data=df,palette='hls')
-st.plotly_chart(fig)
+st.pyplot(fig)
 
 
 fig = px.scatter(df_st1, x='Longueur Active La (cm)', y="KERMA (cgy cm²)")

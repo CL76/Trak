@@ -18,24 +18,20 @@ st.write(df.groupby('type').size())
 st.write(df.groupby('type').count())
 df_st1 = df[df['type']=='st1']
 
-import numpy as np
-arr = np.random.normal(1, 1, size=100)
-fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
-st.pyplot(fig)
+
 
 
 
 st.title("Hello")
-#fig = sns.countplot(x='type',data=df,palette='hls')
-#st.pyplot(fig)
-#plt.show()
+fig = sns.countplot(x='type',data=df,palette='hls')
+st.plotly_chart(fig)
+
 
 fig = px.scatter(df_st1, x='Longueur Active La (cm)', y="KERMA (cgy cm²)")
 st.plotly_chart(fig)
 
 fig = px.scatter(df, x='Longueur Active La (cm)', y="KERMA (cgy cm²)",color='type')
-st.pyplot(fig)
+st.plotly_chart(fig)
 
 fig = px.box(df,  x='Longueur Active La (cm)', y="KERMA (cgy cm²)")
-st.pyplot(fig)
+st.plotly_chart(fig)

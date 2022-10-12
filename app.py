@@ -60,5 +60,5 @@ st.plotly_chart(fig)
 fig = px.violin(df,  x='V CTV HR', y="KERMA (cgy cm²)",color='KERMA (cgy cm²)')
 st.plotly_chart(fig)
 
-#with open("test.txt", "a") as myfile:
-#    myfile.write("appended text")
+#with open("datapoint.txt", "a") as myfile:
+#    myfile.write(Inserta,";",Insertb)
